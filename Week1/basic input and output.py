@@ -1,6 +1,0 @@
-print("Hello!! What is your name\n")
-name = input()
-print(name)
-print(f"name is {name}")
-num=float(input())
-print(f"number is {num}")
