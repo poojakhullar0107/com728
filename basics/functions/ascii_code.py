@@ -1,0 +1,5 @@
+print("Program Started!")
+print("Please enter a letter:")
+character=input()
+print (f"The ASCII code for {character} is: {ord(character)}")
+print("Program Ended!")
