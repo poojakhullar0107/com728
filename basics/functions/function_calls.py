@@ -56,4 +56,5 @@ def run():
         ch = input()
         if ch!='y':
             print("bye.. have a wonderful day")
-run()
+if __name__ ==  "__main__":
+    run()

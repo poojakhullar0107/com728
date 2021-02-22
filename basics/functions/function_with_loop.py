@@ -5,5 +5,11 @@ def cross_bridge(distance):
         print("bridge is collapsing")
     else:
         print("we must keep going")
-cross_bridge(3)
-cross_bridge(6)
+
+def run():
+    print("please enter the distance in steps")
+    distance=int(input())
+    cross_bridge(distance)
+
+if __name__ ==  "__main__":
+    run()

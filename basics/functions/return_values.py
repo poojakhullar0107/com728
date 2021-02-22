@@ -20,4 +20,5 @@ def run():
     else:
         print ("Please enter right choice")
 
-run()
+if __name__ ==  "__main__":
+    run()

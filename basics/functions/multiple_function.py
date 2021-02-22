@@ -9,6 +9,7 @@ def create_ladder():
     print("how many steps you want in ladder")
     step=int(input())
     display_ladder(step)
-
-# to call function
-create_ladder()
+def run():
+    create_ladder()
+if __name__ ==  "__main__":
+    run()

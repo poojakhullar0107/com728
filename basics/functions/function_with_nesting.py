@@ -5,5 +5,7 @@ def identify():
         print("it is time to run")
     else:
         print("we are fine here")
-
-identify()
+def run():
+    identify()
+if __name__ ==  "__main__":
+    run()
