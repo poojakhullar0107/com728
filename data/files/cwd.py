@@ -1,6 +1,6 @@
-
+import os as os
 def cwd():
-    import os
+
     path = os.getcwd()
     print(f"The current working directory is  {path}")
     for file in os.listdir(path):
