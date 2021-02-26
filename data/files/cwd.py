@@ -7,7 +7,7 @@ def cwd():
         print("The directory contains the following files:")
         print(file)
 def run():
-print("Processing....")
+    print("Processing....")
     cwd()
 
 if __name__ ==  "__main__":
