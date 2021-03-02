@@ -13,4 +13,5 @@ def extract(file_path):
 
 def run():
     extract("bots.csv")
-run()
+if __name__ == "__main__":
+    run()
