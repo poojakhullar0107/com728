@@ -15,4 +15,5 @@ def run():
     json_data= read("robocity.json")
     save("exported.json", json_data)
 
-run()
+if __name__ == "__main__":
+    run()

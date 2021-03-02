@@ -20,4 +20,5 @@ def read(file_path):
 def run():
     read("robocity.json")
 
-run()
+if __name__ == "__main__":
+    run()
