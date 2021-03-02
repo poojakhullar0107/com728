@@ -11,9 +11,12 @@ def save(file_path, data):
         json.dump(data,file,indent=4)
     print("Done...")
 
+
 def run():
-    json_data= read("robocity.json")
+
+json_data= read("robocity.json")
     save("exported.json", json_data)
+
 
 if __name__ == "__main__":
     run()
