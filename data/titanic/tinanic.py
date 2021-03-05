@@ -1,6 +1,7 @@
 
 headings=[]
 import csv
+#task1
 def load_data(filepath):
     records=0
     print("loading Data....")
@@ -10,6 +11,9 @@ def load_data(filepath):
         for values in csv_reader:
             records+=1
     print (records)
+
+#task2
+
 def display_menu():
     print("Please select one of the following options:")
     print(" [1] Display the names of all passengers")
@@ -18,8 +22,11 @@ def display_menu():
     print("[4] Display the number of passengers per age group")
     selected_option=int(input())
     print(f"you have selected option {selected_option}")
+
 def run():
     load_data("titanic.csv")
     display_menu()
-run()
+
+if __name__=="__main__":
+    run()
 
