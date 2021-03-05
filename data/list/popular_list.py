@@ -1,6 +1,7 @@
 def directions():
     directions=["Move Forward", "Move Backward", "Turn Left" , "Turn Right"]
     return directions
+
 def menu():
     print("please select a direction")
     path=directions()
@@ -8,6 +9,7 @@ def menu():
         print(f"{index} : {path[index]}")
     index = int(input())
     return path[index]
+
 
 def run():
     route = []
