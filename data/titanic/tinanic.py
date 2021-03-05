@@ -1,6 +1,7 @@
 
 headings=[]
 import csv
+import pandas as pd
 #task1
 def load_data(filepath):
     records=0
@@ -22,10 +23,24 @@ def display_menu():
     print("[4] Display the number of passengers per age group")
     selected_option=int(input())
     print(f"you have selected option {selected_option}")
+    return selected_option
+
+#task 3
+
+def display_passengers_name():
+    print("Name of the passengers are:")
+    with open("titanic.csv") as file:
+        csv_reader = csv.DictReader(file)
+        for values in csv_reader:
+            print(values['Name'])
 
 def run():
     load_data("titanic.csv")
-    display_menu()
+    selected_option=display_menu()
+    if selected_option==1:
+        display_passengers_name()
+
+
 
 if __name__=="__main__":
     run()
