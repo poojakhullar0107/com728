@@ -13,3 +13,11 @@ import pandas as pd
 
 df = pd.read_csv("titanic.csv", usecols=['Name'])
 print(df)
+
+#task 6
+import pandas as pd
+
+df = pd.read_csv("titanic.csv")
+if df['Age']<18:
+    print(df['Age'])
+
