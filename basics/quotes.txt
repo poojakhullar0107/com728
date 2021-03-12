@@ -1,0 +1,5 @@
+'Scooby Doo': 'hi',
+'Shaggy Rogers': 'hello',
+'Fred Jones': 'hi',
+'Daphne Blake': 'hello',
+'Velma Dinkley': 'hi',
