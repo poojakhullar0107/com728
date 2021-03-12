@@ -19,4 +19,5 @@ def run():
 
     for data in observation_set:
         print(f"{data[0]} observed {data[1]} times.")
-run()
+if __name__ =="__main__":
+    run()
