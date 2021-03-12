@@ -33,6 +33,6 @@ def run():
     for data in sorted(observation_set):
         print(f"{data[0]} observed {data[1]} times.")
 
-
+    print(observation_set)
 if __name__=="__main__":
     run()
