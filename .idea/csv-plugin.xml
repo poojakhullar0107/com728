@@ -38,6 +38,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\data\olympics\main.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\olympics\tui.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\titanic\1.py">
           <value>
             <Attribute>

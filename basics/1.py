@@ -27,8 +27,6 @@ def save(quotes):
             print(line)
 
 
-
-
 friends = gang()
 quotes = phrases(friends)
 print("Phrases:")
