@@ -25,17 +25,17 @@ def menu():
     """)
     response = input()
     print(f"Your Selection is : {response:>10}")
-    """return response.lower().strip()"""
+    return response.lower().strip()
 
 
 def display_medal_tally(tally):
-    print(f"|{'Gold':<10}   |{tally['Gold']:<10}   |")
-    print(f"|{'Silver':<10} |{tally['Silver']:<10} |")
-    print(f"|{'Bronze':<10} |{tally['Bronze']:<10} |")
+    print(f"|{'Gold':<10}|{tally['Gold']:<10}|")
+    print(f"|{'Silver':<10}|{tally['Silver']:<10}|")
+    print(f"|{'Bronze':<10}|{tally['Bronze']:<10}|")
 
 
-def display_medal_tally(team_tally):
-    for key, value in team_tally.keys():
+def display_team_medal_tally(team_tally):
+    for key, value in team_tally.items():
         print(key)
         print(f"Gold:\t{value['Gold']}, Silver:{value['Silver']}, Bronze:{value['Bronze']}")
 

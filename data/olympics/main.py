@@ -5,7 +5,7 @@ import tui
 
 
 def read_data(file_path):
-    tui.started("Reading data from {file_path}")
+    tui.started(f"Reading data from {file_path}")
     data = []
     with open(file_path) as csv_file:
         csv_reader = csv.reader(csv_file)
@@ -21,11 +21,11 @@ def run():
     while True:
         selection = tui.menu()
         if selection == "years":
-            pass
+            process.list_years(athlete_data)
         elif selection == "tally":
-            pass
+            process.tally_medals(athlete_data)
         elif selection == "team":
-            pass
+            process.tally_team_medals(athlete_data)
         elif selection == "exit":
             break
         else:
