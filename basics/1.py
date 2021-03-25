@@ -32,7 +32,3 @@ quotes = phrases(friends)
 print("Phrases:")
 print(quotes)
 save(quotes)
-
-
-
-
