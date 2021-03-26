@@ -43,3 +43,15 @@ def  display_product_supplier_locations():
 
     db.close()
 
+def display_products_missing_suppliers():
+    db = sqlite3.connect("catalogue.db")
+    cursor = db.cursor()
+    sql = "SELECT product.name, supplier.name from product "\
+        "LEFT OUTER JOIN supplier ON product.supplier_id=supplier.id"
+    cursor.execute(sql)
+    records = cursor.fetchall()
+    for record in records:
+        print(f"Product : {record[product_name]} ;Supplier  : {record[supplier_name]} \n")
+        db.close()
+
+display_products_missing_suppliers()
