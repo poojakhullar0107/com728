@@ -14,6 +14,7 @@ def phrases(friends):
         quotes.update({friends[index]: quote})
     return (quotes)
 
+
 def save(quotes):
 
     f = open("quotes.txt", "w")

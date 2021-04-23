@@ -6,6 +6,7 @@ def menu():
     print("[3] Display Supplier locations")
     print("[4] Display Missing Supplier")
     print("[5] Display missing products")
+    print("[6] Display missing data")
 
     choice = int(input(" Your Choice : "))
     if choice == 1:
@@ -18,4 +19,10 @@ def menu():
         database.display_products_missing_suppliers()
     elif choice ==5:
         database.display_suppliers_missing_products()
-menu()
+    elif choice ==6:
+        database.display_missing_data()
+    else:
+        print("invalid choice.. Bye")
+
+if __name__=="__main__":
+    menu()

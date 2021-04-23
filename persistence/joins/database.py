@@ -63,4 +63,33 @@ def display_suppliers_missing_products():
     records = cursor.fetchall()
     for record in records:
         print(f"Supplier  : {record[supplier_name]};Product : {record[product_name]} ; \n")
-        db.close()
+    db.close()
+
+
+def display_missing_data():
+    db = sqlite3.connect("catalogue.db")
+    cursor = db.cursor()
+    sql = "SELECT product.name as 'product_name', supplier.name as 'supplier_name' " \
+          "FROM product " \
+          "LEFT OUTER JOIN supplier ON product.supplier_id = supplier.id " \
+          "UNION " \
+          "SELECT product.name as 'product_name', supplier.name as 'supplier_name' " \
+          "FROM supplier " \
+          "LEFT OUTER JOIN product ON product.supplier_id = supplier.id;"
+    cursor.execute(sql)
+    records = cursor.fetchall()
+    suppliers_missing_products=[]
+    products_missing_suppliers=[]
+    for record in records:
+        if record[0] is None:
+            suppliers_missing_products.append(record[1])
+        elif record[1] is None:
+            products_missing_suppliers.append(record[0])
+
+    print(f"The following products are missing suppliers:")
+    print(products_missing_suppliers)
+    print()
+    print(f"The following suppliers are missing products:")
+    print(suppliers_missing_products)
+
+    db.close()

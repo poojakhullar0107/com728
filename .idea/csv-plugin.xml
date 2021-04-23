@@ -150,6 +150,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\persistence\creation\database_model.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\visual\plots\simple.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
