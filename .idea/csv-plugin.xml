@@ -164,6 +164,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\visual\plots\squares.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
