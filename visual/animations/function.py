@@ -10,6 +10,9 @@ def animate(frame):
 
 def run():
     fig, ax = plt.subplots()
-    ani = animation.FuncAnimation(fig,animate,frames=10,interval=1000)
+    ani = animation.FuncAnimation(fig, animate, frames=10, interval=1000)
     plt.show()
-run()
+
+
+if __name__ == "__main__":
+    run()
