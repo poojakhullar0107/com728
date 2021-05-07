@@ -192,6 +192,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\visual\animations\simple.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\visual\plots\dict.py">
           <value>
             <Attribute>
